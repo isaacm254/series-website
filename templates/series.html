@@ -1,0 +1,162 @@
+{% extends 'header-footer.html' %}
+
+{% block content %}
+<div>
+    <div>
+        <input type="text" name="search" placeholder="search">
+        <button class="searchbtn">search</button>
+        <ul class="header" id="classification">
+            <span>classification</span>
+            <ul>
+                <li>آليات</li>
+                <li>أطفال</li>
+                <li>أكشن</li>
+                <li>ألعاب</li>
+                <li>ألغاز</li>
+                <li>اثارة</li>
+                <li>العمل</li>
+                <li>الفضاء</li>
+                <li>المصارعة</li>
+                <li>انيميشن</li>
+                <li>ايتشي</li>
+                <li>بوليسي</li>
+                <li>تاريخي</li>
+                <li>تشويق</li>
+                <li>جوسي</li>
+                <li>حربي</li>
+                <li>حريم</li>
+                <li>خارق</li>
+                <li>خارق لطبيعة</li>
+                <li>خارق للطبيعة</li>
+                <li>خيال</li>
+                <li>خيال علمي</li>
+                <li>دراما</li>
+                <li>رعب</li>
+                <li>رواية</li>
+                <li>رومانسي</li>
+                <li>رياضي</li>
+                <li>زمنكاني</li>
+                <li>ساموراي</li>
+                <li>سحر</li>
+                <li>سنين</li>
+                <li>سوجو</li>
+                <li>سيارات</li>
+                <li>سينين</li>
+                <li>شريحة من الحياة</li>
+                <li>شوجو</li>
+                <li>شونين</li>
+                <li>شياطين</li>
+                <li>طبخ</li>
+                <li>عاطفي</li>
+                <li>عسكري</li>
+                <li>عصابات</li>
+                <li>غموض</li>
+                <li>فانتازيا</li>
+                <li>فنتاسي</li>
+                <li>فنون</li>
+                <li>فنون القتال</li>
+                <li>فنون دفاع عن تنفس</li>
+                <li>قتالي</li>
+                <li>قوة خارقة</li>
+                <li>قوة عظمى</li>
+                <li>قوى خارق</li>
+                <li>قوى خارقة</li>
+                <li>وميدي</li>
+                <li>وميديا</li>
+                <li>عبة</li>
+                <li>ز</li>
+                <li>اجيك</li>
+                <li>مافيا</li>
+                <li>محاكاة ساخرة</li>
+                <li>مدرسي</li>
+                <li>مصاصي دماء</li>
+                <li>مغامرات</li>
+                <li>موسيقى</li>
+                <li>موسيقي</li>
+                <li>ميشا</li>
+                <li>ميكا</li>
+                <li>نفسي</li>
+                <li>نينجا</li>
+            </ul>
+        </ul>
+    </div>
+    <br>
+    {% if page == "episodes" %}
+        <div class="animedet">
+            <div class="anime-title">
+                <h2>anime title</h2>
+            </div>
+            <div class="trailer">
+                <div class="trailer-title">
+                    <h4>trailer</h4>
+                </div>
+                <iframe width="400px" height="240px" class="vid"
+                    src="https://www.youtube.com/embed/T4iC52d-fVY" >
+                </iframe>
+            </div>
+            <div class="right anime-story">
+                <p>the story of the anime the story of the anime the story of the anime the story of the anime</p>
+                <div>
+                    <span>action, </span>
+                    <span>comedy, </span>
+                    <span>harem</span>
+                </div>
+            </div>
+        </div>
+        <br>
+    {% elif page == "chapters" %}
+        <div class="animedet">
+            <div class="anime-title">
+                <h2>anime title</h2>
+            </div>
+            <div class="manga-story">
+                <p>the story of the anime the story of the anime the story of the anime the story of the anime</p>
+                <div>
+                    <span>action, </span>
+                    <span>comedy, </span>
+                    <span>harem</span>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <br>
+    <div id="content">
+        <br>
+        <hr>
+        {% for i in range(1, 17) %}
+        {% if page == "manga" or page == "one shot" or page=="chapters" %}
+        <div>
+            {% if page == "chapters" %}
+            <a href="{{ url_for('read', title=title) }}" class="anime-title">
+            {% else %}
+            <a href="{{ url_for('chapters', title=title) }}" class="anime-title">
+            {% endif %}
+                <img src="{{ url_for('static', filename='img/160d49e5c4b544e0bd047e654dbeffe6.jpg') }}">
+                <br>
+                <span class="anime-title">title</span>
+            </a>
+        </div>
+        {% elif page == "anime series" or page == "ova" or page == "special episodes" or page == "movies" or page == "season" or page=="episodes" %}
+        <div>
+            {% if page == "episodes" %}
+            <a href="{{ url_for('wath', title=title) }}" class="anime-title">
+            {% else %}
+            <a href="{{ url_for('episodes', title=title) }}" class="anime-title">
+            {% endif %}
+                <img src="{{ url_for('static', filename='img/160d49e5c4b544e0bd047e654dbeffe6.jpg') }}">
+                <br>
+                <span class="anime-title">title</span>
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if i%4 == 0 %}
+        <br>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<br>
+<hr>
+{% endblock %}

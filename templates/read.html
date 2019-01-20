@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/viewer.css') }}">
+</head>
+<body class="body">
+    <div>
+        <h1>{{ title }}</h1>
+    </div>
+
+    <div class="chapimg">
+        <button class="prevch">previous chapter</button>
+        <button class="previmg">previous</button>
+        <button class="nextch">next chapter</button>
+        <button class="nextimg">next</button>
+    </div>
+
+    <div>
+        <ul id="image" class="chappgs">
+            <li>
+            <img src="{{ url_for('static', filename='img/1_10.jpg') }}" class="the-img">
+            </li>
+            <li>
+            <img src="{{ url_for('static', filename='img/1_10.jpg') }}" class="the-img">
+            </li>
+            <li>
+            <img src="{{ url_for('static', filename='img/1_10.jpg') }}" class="the-img">
+            </li>
+            <li>
+            <img src="{{ url_for('static', filename='img/1_10.jpg') }}" class="the-img">
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/viewer.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-viewer.js') }}"></script>
+</body>
+</html>

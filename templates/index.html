@@ -1,0 +1,56 @@
+{% extends 'header-footer.html' %}
+{% block content %}
+        <br>
+        <div>
+            <div>
+                <span>Latest Episodes</span>
+            </div>
+            <br>
+            <hr>
+            
+            {% for i in range(1, 9): %}
+            <div>
+                <a href="{{ url_for('episodes', title=title) }}" class="anime-title">
+                    <img src="{{ url_for('static', filename='img/160d49e5c4b544e0bd047e654dbeffe6.jpg') }}">
+                    <br>
+                    <span class="anime-title">title</span>
+                </a>
+            </div>
+            {% if i == 4 %}
+            <br>
+            {% endif %}
+            {% endfor %}
+            <br>
+            <div class="right">
+                <a href="#" class="flinks">more...</a>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <div>
+                <span>latest Anime</span>
+            </div>
+            <br>
+            <hr>
+            {% for i in range(1, 9): %}
+            
+            <div>
+                <a href="{{ url_for('episodes', title=title) }}" class="anime-title">
+                    <img src="{{ url_for('static', filename='img/160d49e5c4b544e0bd047e654dbeffe6.jpg') }}">
+                    <br>
+                    <span class="anime-title">title</span>
+                </a>
+            </div>
+            {% if i == 4 %}
+            <br>
+            {% endif %}
+            {% endfor %}
+            <br>
+            <div class="right">
+                <a href="#" class="flinks">more...</a>
+            </div>
+        </div>
+        <br>
+        <hr>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'header-footer.html'%}
+{% block content %}
+<br>
+<hr>
+<div id="content">
+    {% for i in range(1, 11) %}
+        <div class="newsp">
+            <h3>title</h3>
+            <div>
+                <span>10/5/2014</span>
+                <p>the content of the news</p>
+            </div>
+        </div>
+        <br>
+    {% endfor %}
+</div>
+<br>
+<hr>
+{% endblock %}

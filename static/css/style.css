@@ -1,0 +1,275 @@
+.body {
+
+   background: url("../img/932284.png") fixed;
+   background-size: cover;
+   color: #fff;
+
+}
+
+.form {
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+    margin: 70px auto;
+    align-content: center;
+    box-shadow: 0px 0px 10px;
+}
+
+div {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    display: inline-block;
+    font-family: Bodoni MT;
+    font-size: 20px;
+    margin: 5px;
+}
+input {
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px; 
+    padding: 5px 10px 5px 10px;
+}
+
+span {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+.login-email {
+    margin: 0px 0px 10px 50px;
+}
+
+.login-password {
+    margin: 0px 0px 0px 60px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 30px 0px 10px 140px;
+    border-radius: 5px;
+    background-color: Transparent;
+    box-shadow: 0px 0px 0px;
+    font-family: arial;
+    padding: 5px;
+    color: #fff;
+}
+
+.head{
+    color: #d761c4;
+}
+
+.white-color {
+    color: #fff;
+}
+
+.keep-logged-in {
+    margin: 20px 0px 0px 0px;
+}
+
+.forgot-password {
+    margin: 20px 0px 0px 160px;
+}
+
+.create-account {
+    margin: 0px 0px 0px 90px;
+}
+
+.create-fname {
+    margin: 0px 0px 10px 50px;
+}
+
+.create-sname {
+    margin: 0px 0px 10px 27px;
+}
+
+
+.create-email {
+    margin: 0px 0px 10px 87px;
+}
+
+.create-password {
+    margin: 0px 0px 10px 57px;
+}
+
+.have-account {
+    margin: 0px 0px 0px 120px;
+}
+
+.h1 {
+    text-decoration: none;
+}
+
+.div-width {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    margin: 70px 0px 0px 520px;
+}
+
+.anime-title {
+    text-decoration: none;
+}
+
+.black-color {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.header > ul{
+    display: none;
+    margin-left: -40px;
+    position: absolute;
+    list-style: none;
+    background-color: #051f31;
+    box-shadow: 0px 0px 1px;
+    float: left;
+}
+
+.right {
+    float: right;
+    margin: 0px 10px;
+}
+
+.header {
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+img {
+    width: 215px;
+    height: 215px;
+    margin: 5px;
+}
+
+.main-div {
+    position: absolute;
+    left: 10%;
+    box-shadow: 0px 0px 5px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    background-color: #051f31;
+}
+
+.vl {
+    border-left: 1px solid gray;
+    height: 20px;
+    padding: 5px;
+}
+
+
+header {
+    margin-bottom: 50px;
+    background-color: #051f31;
+    margin-left: 5px;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    background-color: #051f31;
+}
+
+.flinks {
+    text-decoration: none;
+    color: #fff;
+}
+
+#classification > ul{
+    height: 150px;
+    overflow: auto;
+}
+
+.searchbtn {
+    margin: 0px;
+    font-size: 13px;
+}
+
+.newsp {
+    box-shadow: 0px 0px 1px;
+    width: 925px;
+    padding: 5px;
+}
+
+.animedet {
+    width: 925px;
+    box-shadow: 0px 0px 1px;
+    padding: 5px;
+}
+
+.trailer-title {
+    position: absolute;
+    margin-top: 0px;
+
+}
+
+.trailer {
+    float: left;
+    margin: 20px 20px 0px 0px;
+    height: 300px;
+}
+
+.vid {
+    margin-top: 50px;
+    position: relative;
+}
+
+.anime-title {
+     width: 925px;
+     text-align: center;
+}
+
+.anime-story {
+    width: 450px;
+    margin-top: 60px;
+}
+
+.anime-episode {
+    float: left;
+    margin: 5px;
+}
+
+.episodes-num {
+    box-shadow: 0px 0px 1px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.num {
+    width: 69px;
+    margin-left: -40px;
+    height: 200px;
+    overflow: auto;
+}
+
+.manga-story {
+    text-align: center;
+    width: 950px;
+}
+
+.nextch, .nextimg {
+    float: right;
+    margin: 10px;
+}
+
+.prevch, .previmg {
+    float: left;
+    margin: 10px;
+}
+
+.chapimg {
+    width: 950px;
+}
+
+.the-img {
+    margin-left: 9%;
+    width: 800px;
+    height: 800px;
+}

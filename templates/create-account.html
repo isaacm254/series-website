@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Create Account</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="body">
+<div class="div-width">
+	<a href="index.html" class="h1">
+		<h1 class="head">Anime Land</h1>
+	</a>
+</div>
+<form class="form" action="{{ url_for('register') }}">
+	<div class="">
+		<span>First Name</span>
+		<input type="text" name="First Name" placeholder="First Name" class="create-fname">
+	</div>
+	<div>
+		<span>Second Name</span>
+		<input type="text" name="Second Name" placeholder="Second Name" class="create-sname">
+	</div>
+	<div>
+		<span>Email</span>
+		<input type="Email" name="Email" placeholder="Enter Your Email" class="create-email">
+	</div>
+	<div>
+		<span>Password</span>
+		<input type="Password" name="Password" placeholder="Password" class="create-password">
+	</div>
+	<br>
+	<label>
+		<input type="checkbox" name="accept">
+	    Click if you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a> 
+	</label>
+	<br>
+	<button class="submit white-color">Create Account</button>
+	<br>
+	<a href="login.html" class="white-color have-account"><span>ALREADY HAVE AN ACCOUNT</span></a>
+</form>
+</body>
+</html>
