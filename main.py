@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-from webapp2 import *
 import pymysql
 
 
